@@ -40,7 +40,7 @@ async function sendMessage(event) {
 }
 
 async function receiveMessage(event) {
-	console.log('Receive event')
+	console.log('Receive sqs event')
 	console.log(JSON.parse(event.Records[0].body))
 }
 
