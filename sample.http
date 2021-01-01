@@ -1,0 +1,9 @@
+POST http://localhost:3200/sendMessage HTTP/1.1
+content-type: application/json
+
+{
+    "id": "{{$guid}}",
+    "name": "sample",
+    "number": "{{$randomInt 1 10000}}",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
